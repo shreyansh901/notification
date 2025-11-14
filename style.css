@@ -1,0 +1,208 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: hsl(210, 60%, 98%);
+  color: hsl(219, 12%, 42%);
+  min-height: 100vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  background: white;
+  max-width: 700px;
+  width: 100%;
+  margin: 40px auto;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: hsl(224, 21%, 14%);
+}
+
+.notifications-counter {
+  background: hsl(219, 85%, 26%);
+  color: white;
+  padding: 3px 12px;
+  border-radius: 6px;
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.mark-all-button {
+  background: none;
+  border: none;
+  color: hsl(219, 12%, 42%);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.mark-all-button:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+#list {
+  list-style: none;
+}
+
+.notification {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: background 0.2s;
+  cursor: default;
+}
+
+.notification:hover {
+  background: hsl(211, 68%, 94%);
+}
+
+.notification.new-notification {
+  background: hsl(210, 60%, 98%);
+}
+
+.notification img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-infos {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+.profile-link {
+  color: hsl(224, 21%, 14%);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.profile-link:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.notification-link-post,
+.notification-link-group {
+  color: hsl(219, 12%, 42%);
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.notification-link-post:hover,
+.notification-link-group:hover {
+  color: hsl(219, 85%, 26%);
+}
+
+.notification-dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: hsl(1, 90%, 64%);
+  border-radius: 50%;
+  margin-left: 6px;
+}
+
+.notification-text {
+  color: hsl(219, 14%, 63%);
+  font-size: 14px;
+}
+
+.notification-text-private-message {
+  margin-top: 12px;
+  padding: 16px;
+  border: 1px solid hsl(205, 33%, 90%);
+  border-radius: 8px;
+  background: hsl(0, 0%, 99%);
+  color: hsl(219, 12%, 42%);
+  font-size: 14px;
+  display: none;
+  cursor: pointer;
+}
+
+.has-private-message:hover .notification-text-private-message {
+  border-color: hsl(219, 85%, 26%);
+}
+
+.post-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  margin-left: auto;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.post-image:hover {
+  opacity: 0.8;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: hsl(219, 14%, 63%);
+  font-size: 14px;
+}
+
+footer a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  main {
+    margin: 0;
+    padding: 20px;
+    border-radius: 0;
+    min-height: 100vh;
+  }
+
+  header {
+    margin-bottom: 24px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .notification {
+    padding: 14px;
+  }
+}

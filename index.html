@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notifications Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <main>
+    <header>
+      <div class="header-left">
+        <h1>Notifications</h1>
+        <span class="notifications-counter">7</span>
+      </div>
+      <button class="mark-all-button">Mark all as read</button>
+    </header>
+
+    <ul id="list">
+      <!-- Notification 1 -->
+      <li class="notification new-notification">
+        <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Mark Webber" />
+        <div class="notification-content">
+          <div class="notification-infos">
+            <a href="#" class="profile-link"><strong>Mark Webber</strong></a>
+            reacted to your recent post
+            <a href="#" class="notification-link-post">My first tournament today!</a>
+            <span class="notification-dot"></span>
+          </div>
+          <div class="notification-text">1m ago</div>
+        </div>
+      </li>
+
+      <!-- Notification 2 -->
+      <li class="notification new-notification">
+        <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Angela Gray" />
+        <div class="notification-content">
+          <div class="notification-infos">
+            <a href="#" class="profile-link"><strong>Angela Gray</strong></a>
+            followed you
+            <span class="notification-dot"></span>
+          </div>
+          <div class="notification-text">5m ago</div>
+        </div>
+      </li>
+
+      <!-- Notification 3 -->
+      <li class="notification new-notification">
+        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Jacob Thompson" />
+        <div class="notification-content">
+          <div class="notification-infos">
+            <a href="#" class="profile-link"><strong>Jacob Thompson</strong></a>
+            has joined your group
+            <a href="#" class="notification-link-group">Chess Club</a>
+            <span class="notification-dot"></span>
+          </div>
+          <div class="notification-text">1 day ago</div>
+        </div>
+      </li>
+
+      <!-- Notification 4 - Private Message -->
+      <li class="notification new-notification has-private-message">
+        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Rizky Hasanuddin" />
+        <div class="notification-content">
+          <div class="notification-infos">
+            <a href="#" class="profile-link"><strong>Rizky Hasanuddin</strong></a>
+            sent you a private message
+            <span class="notification-dot"></span>
+          </div>
+          <div class="notification-text">5 days ago</div>
+          <div class="notification-text-private-message">
+            Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.
+          </div>
+        </div>
+      </li>
+
+      <!-- Notification 5 -->
+      <li class="notification">
+        <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Kimberly Smith" />
+        <div class="notification-content">
+          <div class="notification-infos">
+            <a href="#" class="profile-link"><strong>Kimberly Smith</strong></a>
+            commented on your picture
+          </div>
+          <div class="notification-text">1 week ago</div>
+        </div>
+        <img src="https://images.unsplash.com/photo-1542817416-2f7c5b7b1d1f?w=100&h=100&fit=crop" alt="chess" class="post-image" />
+      </li>
+
+      <!-- Notification 6 -->
+      <li class="notification new-notification">
+        <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="Nathan Peterson" />
+        <div class="notification-content">
+          <div class="notification-infos">
+            <a href="#" class="profile-link"><strong>Nathan Peterson</strong></a>
+            reacted to your recent post
+            <a href="#" class="notification-link-post">5 end-game strategies to increase your win rate</a>
+            <span class="notification-dot"></span>
+          </div>
+          <div class="notification-text">2 weeks ago</div>
+        </div>
+      </li>
+
+      <!-- Notification 7 -->
+      <li class="notification new-notification">
+        <img src="https://randomuser.me/api/portraits/women/7.jpg" alt="Anna Kim" />
+        <div class="notification-content">
+          <div class="notification-infos">
+            <a href="#" class="profile-link"><strong>Anna Kim</strong></a>
+            left the group
+            <a href="#" class="notification-link-group">Chess Club</a>
+            <span class="notification-dot"></span>
+          </div>
+          <div class="notification-text">2 weeks ago</div>
+        </div>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    Challenge by <a href="https://www.crio.do" target="_blank">Crio.Do</a>. Coded by <a href="#">Your Name</a>.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
